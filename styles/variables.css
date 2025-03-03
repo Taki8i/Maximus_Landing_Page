@@ -1,0 +1,13 @@
+:root {
+  --first-family:'Roboto';
+  --second-family:'Philosopher';
+  --third-family:'Montserrat';
+  --fourth-family:'IBM';
+  --color-black:#000000;
+  --color-darkgray:#363434;
+  --color-lightgray:#000000;
+  --btn-bg:linear-gradient(180deg, #7eb2ff 0%, #0057ff 100%);
+  --color-white:#eaeaea;
+  --color-green:#008139;
+}
+
