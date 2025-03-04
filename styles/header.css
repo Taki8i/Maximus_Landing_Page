@@ -1,0 +1,106 @@
+
+.header {
+  padding: 1.563rem 0 0 0;
+}
+
+.header__wrapper{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header__logo {
+  margin-right: auto;
+}
+
+.nav {
+  margin: 0 4.563rem 0 0;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0 2.813rem;
+}
+
+.nav__link,
+.header__number {
+  font-family: var(--first-family);
+  font-weight: 400;
+  font-size: 0.813rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-black);
+  position: relative;
+}
+
+.nav__link::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 1.25rem;
+  width: 0%;
+  height: 2px;
+  background-color: var(--color-green);
+  -webkit-transition-property: width;
+  -o-transition-property: width;
+  transition-property: width;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.header__number {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.header__number svg{
+  position: absolute;
+  top: 5px;
+  left: -26px;
+  width: 30px;
+  height: 30px;
+}
+
+.header__number::before{
+  content: "Ежедневно 9:00 – 22:00";
+  position: absolute;
+  top: 25px;
+  left: 0;
+  font-family: var(--first-family);
+  font-weight: 400;
+  font-size: 0.813rem;
+  color: #7d808a;
+  text-transform: none;
+}
+
+ @media (hover: hover) and (pointer: fine){
+
+  .nav__link:hover::before{
+    width: 100%;
+  }
+
+} 
+
+@media(max-width:850px){
+
+  .nav__list{
+    gap: 0 1.875rem;
+  }
+
+  .nav__link,
+  .header__number::before{
+    font-size: 0.688rem;
+  }
+
+  .header__number{
+    font-size: 0.875rem;
+  }
+
+}
+

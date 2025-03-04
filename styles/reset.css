@@ -141,6 +141,26 @@
  }
 
  .hero{
-  background: url('../sources/images/home-bg.png') no-repeat center center;
+  background: url('../sources/images/home-bg.png') no-repeat 100% 0% / cover;
   height: 100vh;
+ }
+
+ @media(max-width:1500px){
+  .container{
+    padding: 0px 10px;
+  }
+ }
+
+ @media(max-width:1000px){
+  .hero{
+    background-size: 100% 75%;
+  }
+
+ }
+
+ @media(max-width:768px){
+  .hero{
+    background-position: 54% 1%;
+    background-size: 181% 94%;
+  }
  }
